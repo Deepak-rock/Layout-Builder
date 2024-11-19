@@ -1,1 +1,56 @@
 /* Write your CSS here */
+.configuration-controller-container {
+  background-color: #475569;
+  min-height: 20vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.configuration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 80%;
+  max-width: 550px;
+}
+.layout {
+  color: #f1f5f9;
+  font-size: 32px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  padding: 20px 0 0 0;
+}
+.configuration-options {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.option-container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+input {
+  cursor: pointer;
+}
+.label {
+  color: #f1f5f9;
+  font-size: 14px;
+  font-family: 'Roboto';
+  padding: 5px 0;
+}
+@media screen and (min-width: 768px) {
+  .configuration-container {
+    max-width: 1000px;
+  }
+  .layout {
+    font-size: 48px;
+  }
+  .label {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+}

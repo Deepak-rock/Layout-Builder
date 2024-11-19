@@ -1,1 +1,128 @@
 /* Write your CSS here */
+.body-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-self: stretch;
+}
+.left-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  background-color: #e2e8f0;
+  height: 30%;
+  padding: 32px;
+  margin: 2px 0;
+}
+.body-heading {
+  color: #475569;
+  font-size: 18px;
+  font-family: 'Roboto';
+  font-weight: 600;
+  padding: 20px 0;
+}
+.list-item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.item {
+  font-family: 'Roboto';
+  font-size: 20px;
+  margin: 10px;
+  color: #475569;
+}
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  background-color: #f1f5f9;
+  padding: 32px;
+  margin: 2px 0;
+}
+.content {
+  color: #475569;
+  font-size: 24px;
+  text-align: left;
+}
+.right-navbar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: stretch;
+  flex-wrap: wrap;
+  flex-shrink: 0;
+  background-color: #e2e8f0;
+  height: 30%;
+  padding: 32px;
+  margin: 2px 0;
+}
+.ad-box-container {
+  display: flex;
+  justify-content: center;
+}
+.ad-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #475569;
+  font-family: 'Roboto';
+  font-size: 20px;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #64748b;
+  margin: 5px;
+}
+@media screen and (min-width: 768px) {
+  .body-container {
+    flex-direction: row;
+    justify-content: space-between;
+    height: 450px;
+    margin: 8px 0 12px 0;
+  }
+  .left-navbar {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 30%;
+    max-width: 250px;
+    margin: 0 2px;
+  }
+  .list-item {
+    flex-direction: column;
+  }
+  .body-heading {
+    font: 20px;
+  }
+  .item {
+    font-size: 24px;
+  }
+  .content-container {
+    margin: 0 2px;
+  }
+  .right-navbar {
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100%;
+    width: 30%;
+    max-width: 250px;
+    margin: 0 2px;
+  }
+  .ad-box-container {
+    flex-direction: column;
+    width: 100%;
+  }
+  .ad-box {
+    font-size: 24px;
+    width: 100%;
+    margin: 5px 0 10px 0;
+  }
+}

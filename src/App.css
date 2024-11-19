@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  margin: 0;
 }
 
 body {
@@ -12,4 +13,14 @@ body {
 }
 
 /* Write your CSS here */
-
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.responsive-container {
+  width: 100%;
+  max-width: 1100px;
+}
